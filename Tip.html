@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Tip.css">
+        <title></title>
+</head>
+
+<body>
+<div class="container">
+ <div class="bill_amount_div">
+ <label>Bill Amount</label> 
+<input type="number" class="bill_amount_input" placeholder="0.00" value="10" oninput="result()">
+ <span>$</span>
+ </div>  
+ 
+ <div class="check_split_div">
+ <label>Check split</label>
+ <div class="check_split">
+<div class="minus-btn">-</div>
+<span class="check_split_value">1</span>
+<div class="plus-btn">+</div>
+ </div>
+ </div>
+ 
+<div class="tip_amount_div">
+<label>Tip Amount</label>  
+<span class="tip_amount_percentage">24<span>%</span></span>
+<span class="tip_amount_value">$11.49</span>
+<input type="range" class="tip_amount_percentage_range" oninput="result()">
+</div> 
+
+<div class="result-div">
+        
+<div class="tip_per_person">
+ <span>Tip Per Person</span>
+ <h4 class="tpp_value">$2.40</h4>     
+</div> 
+
+<div class="total_per_person">
+ <span>Total Amount</span>  
+ <div class="total_amount_div">
+ <h3>$</h3>       
+    <h4 class="total_amount">12.40</h4>     
+ </div>
+</div>
+</div>
+ </div>
+ 
+ <script src="Tip.js"></script>
+</body>
+
+</html>
